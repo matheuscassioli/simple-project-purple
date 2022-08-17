@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     --purple-bg-color:#6648B1;
+    --white-color:#fff;
+    --white-low-color:#f0e5e5;
+    --button-bg-color:#f9f9f9;
+    --button-color:#b342ff;
+    --button-border:#dcdcdc;
+    --button-hover:#e9e9e9;
 }
 
 body {
@@ -27,7 +33,6 @@ body {
     margin: 31px 0px 0px 31px;
 }
 
-
 .container {
     display: flex;
     width: 100%;  
@@ -39,7 +44,7 @@ body {
     display: flex;
     width: 40%;
     flex-direction: column;
-    color: white;
+    color: var(--white-color);
     align-items: center;
     height: 100%;
     margin-top: 5%;
@@ -68,16 +73,11 @@ h1 {
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: #f0e5e5;
+    color:var(--white-low-color);
     width: 90%;
-}
+} 
 
-
-.top img {
-    width: 160px;
-    margin-top: 30px;
-    margin-left: 30px;
-}
+/*--------footer css---------*/
 
 footer{ 
     width:100%;
@@ -85,7 +85,7 @@ footer{
     position: absolute;
     display: flex;
     justify-content: center; 
-    color: white; 
+    color: var(--white-color); 
     font-family: 'Poppins', sans-serif;
     align-items: center; 
     font-size: 13px;
@@ -93,7 +93,7 @@ footer{
 }
 
 footer a{
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
 }
 footer p a:nth-child(1){
@@ -108,97 +108,35 @@ footer p a:nth-child(2){
     width:20px;
     vertical-align: middle;
 } 
+
+
 /*-----------css button----------------*/
+
+
 .myButton {
     margin-top: 30px;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px var(--white-color);
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	background-color:#f9f9f9;
+	background-color:var(--button-bg-color);
 	border-radius:42px;
-	border:1px solid #dcdcdc;
+	border:1px solid var(--button-border);
 	display:inline-block;
 	cursor:pointer;
-	color:#b342ff;
+	color:var(--button-color);
 	font-family:Arial;
 	font-size:14px;
 	padding:12px 43px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;    
+	text-shadow:0px 1px 0px var(--white-color);    
     text-align:center;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-	background-color:#e9e9e9;
+	background-color:var(--button-hover)
 }
 .myButton:active {
 	position:relative;
 	top:1px;
 }
 
- 
-@media screen and (max-width: 700px) {
-    .right-side { 
-        width: 90%;
-        margin:  0px;
-    }
-
-    .left-side {
-        width: 88%;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .img-left-side {
-        width: 93%;
-        
-    }
-
-    h1 {
-        margin-top: 15px;
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    h4 {
-       display: block;
-        text-align: center; 
-        width: 100%;
-        padding: 0px 16px;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-    .botao{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-    footer{
-        position: relative !important;
-        width:100%;
-        height: 10%;
-        color: white; 
-        font-family: 'Poppins', sans-serif;
-        padding: 0 10px 10px 10px;
-        font-size: 14px;
-    }
-    footer p{
-        width: 100%;
-        height: 100%;
-        text-align:center;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    body {
-        background-image: url(./img/bg-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .cabecalho img{
-        width: 40%;
-    }
-}
  
