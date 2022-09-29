@@ -1,0 +1,33 @@
+ footer{    
+    display: flex;
+    width: 100%;
+    justify-content: center; 
+    color: var(--white-color); 
+    font-family: 'Poppins', sans-serif;
+    align-items: center; 
+    font-size: 13px;  
+    padding: 1rem 0;
+}
+
+footer a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer p{
+    padding: 0 2rem;
+    text-align: center;
+}
+
+footer p a:nth-child(1){
+    font-style: italic;
+}
+
+footer p a:nth-child(2){
+    font-weight:600 ;
+}
+
+.linkedin{
+    width:20px;
+    vertical-align: middle;
+} 
