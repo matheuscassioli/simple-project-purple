@@ -9,6 +9,10 @@
     .container {
         flex-direction: column;
     }
+    
+        .container iframe{
+        margin: auto;
+    }
 
     .right-side {
         width: 90%;
